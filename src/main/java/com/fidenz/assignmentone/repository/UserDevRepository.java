@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Profile("dev")
+@Profile({"dev", "default"})
 public class UserDevRepository implements IUserRepository{
     @Override
     public String getData() {
