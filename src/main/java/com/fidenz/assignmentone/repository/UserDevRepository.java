@@ -4,11 +4,10 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Profile("test")
-public class UserRepository implements IUserRepository {
-
+@Profile("dev")
+public class UserDevRepository implements IUserRepository{
     @Override
     public String getData() {
-        return "Get Default Data";
+        return "Get Dev Data";
     }
 }
